@@ -1,3 +1,6 @@
+import Personagens.Heroi;
+import Personagens.Inimigo;
+
 import java.util.ArrayList;
 
 public class Mapa
@@ -8,7 +11,7 @@ public class Mapa
     ArrayList<Heroi>herois;
     ArrayList<Inimigo>inimigos ;
 
-    public Mapa(String nome,int altura, int largura,ArrayList<Heroi>herois,ArrayList<Inimigo>inimigos)
+    public Mapa(String nome,int altura, int largura,ArrayList<Inimigo>inimigos)
     {
         this.nome=nome;
         this.altura=altura;
@@ -25,14 +28,16 @@ public class Mapa
         int index = 0;
         for (int i = 0; i < inimigos.size(); i++)
         {
-            if(inimigos.get(i).atk>maiorAtk)
+            if(inimigos.get(i).getAtk()>maiorAtk)
             {
-                maiorAtk = inimigos.get(i).atk;
+                maiorAtk = inimigos.get(i).getAtk();
                 index = i;
             }
         }
         return  inimigos.get(index);
     }
+
+
 
 }
 
