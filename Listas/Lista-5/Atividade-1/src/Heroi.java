@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class Heroi {
     private int id;
     private String nome;
@@ -25,6 +27,7 @@ public class Heroi {
     }
     public String getNomeHeroi()
     {
+
         return nome;
     }
     public void setNomeHeroi(String nome)
@@ -39,6 +42,7 @@ public class Heroi {
     {
         this.quantMoedasOuro=quantMoedasOuro;
     }
+
 
 
 }

@@ -9,12 +9,7 @@ public class Grupo {
     {
         this.herois = new ArrayList<>();
     }
-    public void addHeroi(Heroi heroi)
-    {
-       this.herois.add(heroi);
-       this.totalMoedasOuro = this.totalMoedasOuro + heroi.getQuantMoedasOuro();
-       System.out.println("O Heroi "+heroi.getNomeHeroi()+" foi adicionado ao grupo");
-    }
+
     public void removeHeroi(int idHeroi)
     {
         for(int i=0;i<herois.size();i++)
@@ -27,23 +22,23 @@ public class Grupo {
                 return;
             }
         }
+        System.out.println("ERRO!! esse heeroi ja está no grupo.");
     }
 
     public ArrayList<Heroi> getHerois()
     {
         return herois;
     }
-    public void setHerois(ArrayList<Heroi>herois)
+    public void addHeroi(Heroi heroi)
     {
-        this.herois=herois;
+        this.herois.add(heroi);
+        this.totalMoedasOuro = this.totalMoedasOuro + heroi.getQuantMoedasOuro();
+        System.out.println("O Heroi " + heroi.getNomeHeroi() + " foi adicionado ao grupo");
+
     }
     public int getTotalMoedasOuro()
     {
         return totalMoedasOuro;
-    }
-    public void setTotalMoedasOuro(int totalMoedasOuro)
-    {
-        this.totalMoedasOuro=totalMoedasOuro;
     }
 
 }
