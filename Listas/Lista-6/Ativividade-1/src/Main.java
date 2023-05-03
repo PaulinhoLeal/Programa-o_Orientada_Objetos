@@ -6,6 +6,6 @@ public class Main {
         Moto moto = new Moto(2,15,25,false);
         moto.especial();
 
-        
+
     }
 }
