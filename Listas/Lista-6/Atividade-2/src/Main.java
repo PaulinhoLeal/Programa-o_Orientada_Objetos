@@ -18,7 +18,7 @@ public class Main {
             double h = read.nextDouble();
             System.out.println("A Area do triângulo é: "+triangulo.calcularArea(b, h));
         }
-        else
+        else if(escolhaDaForma==2)
         {
             System.out.println("Digite a base do quadrado:");
             double b = read.nextDouble();
