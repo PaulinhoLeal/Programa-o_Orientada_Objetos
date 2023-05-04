@@ -1,6 +1,6 @@
-public abstract class FormaGeometrica {
+public interface FormaGeometrica {
 
-    public abstract double calcularArea(double base, double altura);
+    double calcularArea(double base, double altura);
 
 
 

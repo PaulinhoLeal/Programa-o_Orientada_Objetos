@@ -1,12 +1,10 @@
 import java.util.Scanner;
 
-public class Triangulo extends FormaGeometrica {
+public class Triangulo implements FormaGeometrica {
 
     @Override
     public double calcularArea(double base, double altura)
     {
-
-
         return (base * altura)/2;
     }
 }
